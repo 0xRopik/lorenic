@@ -35,13 +35,13 @@ export function Formats() {
               key={format.name}
               className="flex flex-col overflow-hidden rounded-3xl border border-border bg-card"
             >
-              <div className="relative aspect-[4/3] bg-secondary">
+              <div className="relative aspect-[4/3] bg-white">
                 <Image
                   src={getAssetPath(format.image || '/placeholder.svg')}
                   alt={`Lorenic ${format.name}`}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
+                  className="object-contain p-4 transition-transform duration-300 hover:scale-105"
                 />
               </div>
               <div className="p-6 sm:p-8">

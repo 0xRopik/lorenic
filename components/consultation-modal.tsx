@@ -14,8 +14,8 @@ import { ShieldCheck, ShieldAlert, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 // Official Lorenic consultation contact.
-const WHATSAPP_DISPLAY = '+62 812 1857 8868'
-const WHATSAPP_NUMBER = '6281218578868'
+const WHATSAPP_DISPLAY = '087769004800'
+const WHATSAPP_NUMBER = '6287769004800'
 
 type ConsultationContextValue = {
   open: () => void

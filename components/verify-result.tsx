@@ -116,7 +116,7 @@ export function NotVerifiedResult({ code }: { code?: string }) {
             segera hubungi tim kami untuk bantuan.
           </p>
           <Button
-            render={<a href="https://wa.me/6280000000000" target="_blank" rel="noreferrer" />}
+            render={<a href="https://wa.me/6287769004800" target="_blank" rel="noreferrer" />}
             className="mt-5 w-full bg-primary text-primary-foreground hover:bg-primary/90"
           >
             Hubungi Tim Lorenic

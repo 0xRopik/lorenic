@@ -18,7 +18,7 @@ export function SiteFooter() {
           </div>
           <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
             <Button
-              render={<a href="https://wa.me/6280000000000" />}
+              render={<a href="https://wa.me/6287769004800" target="_blank" rel="noreferrer" />}
               size="lg"
               className="gap-2 bg-accent text-accent-foreground hover:bg-accent/90"
             >
@@ -26,7 +26,7 @@ export function SiteFooter() {
               Chat dengan Kami
             </Button>
             <Button
-              render={<a href="mailto:hello@lorenic.com" />}
+              render={<a href="mailto:cs@lorenic.id" />}
               size="lg"
               variant="outline"
               className="gap-2 border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
@@ -97,10 +97,16 @@ export function SiteFooter() {
             </h3>
             <ul className="mt-4 flex flex-col gap-3 text-sm text-primary-foreground/80">
               <li className="flex items-center gap-2">
-                <Mail className="size-4 text-accent" /> hello@lorenic.com
+                <Mail className="size-4 text-accent" /> cs@lorenic.id
+              </li>
+              <li className="flex items-center gap-2">
+                <MessageCircle className="size-4 text-accent" />
+                <a href="https://wa.me/6287769004800" target="_blank" rel="noreferrer" className="hover:text-accent">
+                  087769004800
+                </a>
               </li>
               <li className="flex items-start gap-2">
-                <MapPin className="mt-0.5 size-4 text-accent" /> Pengiriman ke seluruh Eropa &amp; dunia
+                <MapPin className="mt-0.5 size-4 text-accent" /> Pengiriman ke seluruh Eropa &amp; Indonesia
               </li>
             </ul>
           </div>
