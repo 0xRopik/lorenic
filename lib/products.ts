@@ -39,6 +39,7 @@ export interface Product {
   cartridgeOriginalPrice?: string
   penPrice: string
   penOriginalPrice?: string
+  hidden?: boolean
 }
 
 export const products: Product[] = [
@@ -69,6 +70,7 @@ export const products: Product[] = [
     cartridgeOriginalPrice: 'Rp4.000.000',
     penPrice: 'Rp4.000.000',
     penOriginalPrice: 'Rp5.000.000',
+    hidden: true,
   },
   {
     slug: 'semaglutide',
@@ -83,6 +85,7 @@ export const products: Product[] = [
     cartridgeOriginalPrice: 'Rp2.350.000',
     penPrice: 'Rp2.800.000',
     penOriginalPrice: 'Rp3.350.000',
+    hidden: true,
   },
   {
     slug: 'cjc-1295-ipamorelin',
@@ -111,6 +114,7 @@ export const products: Product[] = [
     cartridgeOriginalPrice: 'Rp3.575.000',
     penPrice: 'Rp4.000.000',
     penOriginalPrice: 'Rp4.575.000',
+    hidden: true,
   },
   {
     slug: 'kpv',
@@ -125,6 +129,7 @@ export const products: Product[] = [
     cartridgeOriginalPrice: 'Rp1.680.000',
     penPrice: 'Rp2.300.000',
     penOriginalPrice: 'Rp2.680.000',
+    hidden: true,
   },
   {
     slug: 'semax',
@@ -139,6 +144,7 @@ export const products: Product[] = [
     cartridgeOriginalPrice: 'Rp1.850.000',
     penPrice: 'Rp2.200.000',
     penOriginalPrice: 'Rp2.850.000',
+    hidden: true,
   },
   {
     slug: 'selank',
@@ -167,6 +173,7 @@ export const products: Product[] = [
     cartridgeOriginalPrice: 'Rp1.050.000',
     penPrice: 'Rp1.300.000',
     penOriginalPrice: 'Rp2.050.000',
+    hidden: true,
   },
   {
     slug: 'klow80',
@@ -254,10 +261,12 @@ export const products: Product[] = [
   },
 ]
 
+export const activeProducts = products.filter((p) => !p.hidden)
+
 export function getProduct(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug)
 }
 
 export function getRelatedProducts(slug: string, limit = 4): Product[] {
-  return products.filter((p) => p.slug !== slug).slice(0, limit)
+  return activeProducts.filter((p) => p.slug !== slug).slice(0, limit)
 }

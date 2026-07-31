@@ -35,12 +35,12 @@ export function ProductDetail({ product }: { product: Product }) {
   const activeVariant = VARIANTS.find((v) => v.id === variant) ?? VARIANTS[0]
 
   // Image slideshow array:
-  // 0: Main Product Vial
-  // 1: Cartridge Package (/cartridgepackagelorenic.png)
-  // 2: Pen Package (/penpackageloreniccatalog.png)
+  // 0: Cartridge Package (/products/catridge.png) - Default primary image
+  // 1: Main Product Vial
+  // 2: Pen Package (/products/penpackagelebar.jpg)
   const galleryImages = [
+    { src: '/products/catridge.png', label: 'Paket Cartridge', variantId: 'cartridge' as VariantId },
     { src: product.image || '/placeholder.svg', label: 'Vial Riset', variantId: null },
-    { src: '/cartridgepackagelorenic.png', label: 'Paket Cartridge', variantId: 'cartridge' as VariantId },
     { src: '/products/penpackagelebar.jpg', label: 'Paket Pen', variantId: 'pen' as VariantId },
   ]
 
@@ -49,7 +49,7 @@ export function ProductDetail({ product }: { product: Product }) {
     setVariant(vId)
     setIsAutoPlaying(false) // pause auto-play on manual click
     if (vId === 'cartridge') {
-      setActiveImageIndex(1)
+      setActiveImageIndex(0)
     } else if (vId === 'pen') {
       setActiveImageIndex(2)
     }

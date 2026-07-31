@@ -1,7 +1,7 @@
 import { ProductCard } from '@/components/product-card'
 import { ConsultationButton } from '@/components/consultation-button'
 import { Reveal, Stagger, StaggerItem } from '@/components/reveal'
-import { products } from '@/lib/products'
+import { activeProducts } from '@/lib/products'
 
 export function Products() {
   return (
@@ -17,7 +17,7 @@ export function Products() {
         </Reveal>
 
         <Stagger className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
-          {products.map((product) => (
+          {activeProducts.map((product) => (
             <StaggerItem key={product.slug}>
               <ProductCard product={product} />
             </StaggerItem>

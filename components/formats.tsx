@@ -6,7 +6,7 @@ import { getAssetPath } from '@/lib/utils'
 const formats = [
   {
     name: 'Versi CARTRIDGE',
-    image: '/cartridgepackagelorenic.png',
+    image: '/products/catridge.png',
     bgClass: 'bg-white',
     body: 'Cocok untuk pelanggan yang sudah pernah membeli PEN PACKAGE dan ingin melanjutkan penggunaan, dapatkan harga lebih hemat dengan hanya membeli cartridge refill Lorenic dengan isi peptide.',
   },
