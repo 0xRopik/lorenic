@@ -18,7 +18,7 @@ export function SiteFooter() {
           </div>
           <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
             <Button
-              render={<a href="https://wa.me/6287769004800" target="_blank" rel="noreferrer" />}
+              render={<a href="https://wa.me/6287769004800?text=Hallo%20Kak%2C%20saya%20mau%20tanya%20tentang%20produk%20Lorenic" target="_blank" rel="noreferrer" />}
               size="lg"
               className="gap-2 bg-accent text-accent-foreground hover:bg-accent/90"
             >
@@ -57,7 +57,7 @@ export function SiteFooter() {
               </li>
               <li>
                 <a href="#format" className="hover:text-accent">
-                  Versi Vial
+                  Versi Cartridge
                 </a>
               </li>
               <li>
@@ -101,7 +101,7 @@ export function SiteFooter() {
               </li>
               <li className="flex items-center gap-2">
                 <MessageCircle className="size-4 text-accent" />
-                <a href="https://wa.me/6287769004800" target="_blank" rel="noreferrer" className="hover:text-accent">
+                <a href="https://wa.me/6287769004800?text=Hallo%20Kak%2C%20saya%20mau%20tanya%20tentang%20produk%20Lorenic" target="_blank" rel="noreferrer" className="hover:text-accent">
                   087769004800
                 </a>
               </li>
@@ -117,7 +117,7 @@ export function SiteFooter() {
             &copy; {new Date().getFullYear()} Lorenic. Hak cipta dilindungi.
           </p>
           <p className="max-w-lg text-pretty sm:text-right">
-            Hanya untuk penelitian laboratorium. Bukan untuk konsumsi manusia atau hewan.
+            Bukan untuk konsumsi manusia atau hewan.
           </p>
         </div>
       </div>

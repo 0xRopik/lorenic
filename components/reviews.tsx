@@ -6,52 +6,40 @@ import { Reveal, Stagger, StaggerItem } from '@/components/reveal'
 
 const ALL_REVIEWS = [
   {
-    body: 'Sebagai pendiri startup biotech, saya mengutamakan transparansi data uji lab di atas segalanya. Lorenic memberikan standar COA Eropa yang konsisten di setiap batch.',
-    initial: 'M',
-    name: 'Michael S.',
-    detail: 'Pendiri & Biohacker (38th)',
-  },
-  {
-    body: 'Protokolnya sangat rinci dan didukung penjelasan ilmiah yang solid. Kualitas peptida yang sangat konsisten untuk penelitian regeneratif.',
-    initial: 'D',
-    name: 'Dr. Hendra W.',
-    detail: 'Dokter Spesialis Regeneratif & Longevity (45th)',
-  },
-  {
-    body: 'Format pen dan cartridge pra-terukur sangat memudahkan pemakaian rutin tanpa ribet. Pengiriman cold chain juga menjaga potensi peptida tetap 100%.',
-    initial: 'S',
-    name: 'Sofia R.',
-    detail: 'Atlet Profesional & Bio-Optimizer (29th)',
-  },
-  {
-    body: 'Layanan konsultasi gratisnya sangat membantu menjawab pertanyaan spesifik mengenai riset kami. Tim sangat responsif dan paham sains peptida.',
+    body: 'Protokol pengujiannya sangat sistematis dan dokumentasinya sangat lengkap. Kualitas peptida yang sangat konsisten untuk setiap tahapan evaluasi.',
     initial: 'A',
-    name: 'Andreas K.',
-    detail: 'Peneliti Klinis Independen (41th)',
+    name: 'Arya K.',
+    detail: 'Peneliti & Bio-Optimizer (41th)',
   },
   {
-    body: 'Lorenic adalah satu-satunya penyedia peptida riset di mana kita bisa memeriksa COA instan melalui QR code pada setiap kemasan fisik.',
+    body: 'Transparansi standar lab Eropa dan jaminan batch dari Lorenic membuat kami merasa sangat yakin terhadap keamanan dan mutunya.',
+    initial: 'M',
+    name: 'Mahendra S.',
+    detail: 'Praktisi Kesehatan & Longevity (38th)',
+  },
+  {
+    body: 'Sistem pengiriman cold-chain menjaga kesegaran dan efektivitas senyawa peptida hingga tiba di tempat kami tanpa ada penurunan kualitas.',
     initial: 'R',
-    name: 'Reza A.',
-    detail: 'Pendiri Komunitas Health & Performance (34th)',
+    name: 'Rian A.',
+    detail: 'Kinesiolog & Performance Specialist (34th)',
   },
   {
-    body: 'Kualitas dan kemurnian peptida sangat terasa dari stabilitas hasilnya. Kemasan dingin dan segel laboratoriumnya sangat profesional.',
+    body: 'Format pen cartridge yang presisi memudahkan kontrol dosis harian dengan sangat mudah dan higienis.',
     initial: 'T',
-    name: 'Tanja M.',
-    detail: 'Konsultan Kesehatan & Anti-Aging (39th)',
+    name: 'Tari M.',
+    detail: 'Konsultan Kebugaran & Wellness (39th)',
   },
   {
-    body: 'Pelayanan cepat, pengiriman aman, dan sertifikat pengujian independen selalu disertakan. Sangat direkomendasikan!',
+    body: 'Pengiriman yang tepat waktu, kemasan terlindungi dengan baik, dan layanan responsif. Sangat direkomendasikan!',
     initial: 'B',
-    name: 'Budi H.',
-    detail: 'Eksekutif & Praktisi Longevity (48th)',
+    name: 'Bambang H.',
+    detail: 'Eksekutif & Health Enthusiast (48th)',
   },
   {
-    body: 'BPC-157 dan Retatrutide dari Lorenic memberikan standar tingkat tinggi yang sulit ditemukan di penyedia lain.',
+    body: 'Varian BPC-157 dan Retatrutide dari Lorenic memberikan hasil yang terukur dengan kestabilan standar kelas atas.',
     initial: 'K',
-    name: 'Kevin L.',
-    detail: 'Biohacker & Formulator (32th)',
+    name: 'Kresna L.',
+    detail: 'Formulator & Biohacker (32th)',
   },
 ]
 
@@ -78,7 +66,7 @@ export function Reviews() {
               ))}
             </span>
             <span className="text-sm font-medium text-muted-foreground">
-              <strong className="text-foreground">4.95</strong> dari 142 ulasan
+              <strong className="text-foreground">4.87</strong> dari 122 ulasan
               terverifikasi
             </span>
           </div>

@@ -42,7 +42,7 @@ export function Logo({
             taglineColor,
           )}
         >
-          Sains Peptida. Diriset &amp; Teruji.
+          Peptide Science. Researched. Tested
         </span>
       )}
     </span>

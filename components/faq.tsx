@@ -38,7 +38,7 @@ const faqs = [
     a: 'Beberapa peptida umum dipelajari dalam protokol kombinasi, tetapi tidak semua kombinasi sesuai untuk setiap individu. Pilih kombinasi berdasarkan tujuan, pengalaman, dan panduan profesional Anda.',
   },
   {
-    q: 'Apa perbedaan antara Versi Pen dan Versi Vial?',
+    q: 'Apa perbedaan antara Versi Pen dan Versi Cartridge?',
     a: 'Versi Pen dirancang untuk kenyamanan lebih dan pemberian dosis yang terukur. Versi cartridge pra-terisi ditujukan bagi pelanggan yang telah memiliki perangkat Lorenic Pen dan ingin terus menggunakannya.',
   },
   {
@@ -110,7 +110,7 @@ export function Faq() {
 
         <div className="mt-10 rounded-2xl border border-border bg-muted/50 p-6">
           <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-foreground">
-            Penafian
+            DISCLAIMER
           </h3>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
             Konten ini disediakan untuk tujuan pendidikan dan informasi mengenai

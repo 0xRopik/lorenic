@@ -79,7 +79,7 @@ function ConsultationModal({
   function handleContinue() {
     if (!canContinue) return
     const message = encodeURIComponent(
-      `Halo Lorenic, saya ingin memulai konsultasi. Nomor kontak saya adalah ${phone}.`,
+      `Hallo Kak, saya mau tanya tentang produk Lorenic. Nomor kontak saya adalah ${phone}.`,
     )
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`
     window.open(url, '_blank', 'noopener,noreferrer')

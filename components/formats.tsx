@@ -5,14 +5,14 @@ import { getAssetPath } from '@/lib/utils'
 
 const formats = [
   {
-    name: 'Versi Vial',
-    image: '/products/vial-version.jpeg',
-    body: 'Format vial menawarkan fleksibilitas yang lebih besar dan merupakan pilihan populer bagi mereka yang mengutamakan efisiensi serta kontrol dosis yang lebih rinci.',
+    name: 'Versi CARTRIDGE',
+    image: '/cartridgepackagelorenic.png',
+    body: 'Cocok untuk pelanggan yang sudah pernah membeli PEN PACKAGE dan ingin melanjutkan penggunaan, dapatkan harga lebih hemat dengan hanya membeli cartridge refill Lorenic dengan isi peptide.',
   },
   {
-    name: 'Versi Pen',
-    image: '/lorenic-package.jpeg',
-    body: 'Pra-terukur dan siap digunakan tanpa langkah tambahan. Ideal bagi Anda yang mengutamakan kepraktisan, konsistensi, dan kemudahan penggunaan sehari-hari.',
+    name: 'Versi PEN',
+    image: '/penpackageloreniccatalog.png',
+    body: 'dilengkapi dengan pen reusable premium, cartridge, dan travel set pendingin eksklusif.',
   },
 ]
 
