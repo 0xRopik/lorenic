@@ -4,6 +4,7 @@ import { FlaskConical, Headset, Truck } from "lucide-react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ConsultationButton } from "@/components/consultation-button"
+import { getAssetPath } from "@/lib/utils"
 
 const trust = [
   { icon: FlaskConical, label: "Diuji laboratorium sebelum setiap pengiriman." },
@@ -17,7 +18,7 @@ const container = {
 }
 const item = {
   hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const } },
 }
 
 export function Hero() {
@@ -31,7 +32,7 @@ export function Hero() {
         playsInline
         aria-hidden="true"
       >
-        <source src="/hero-lorenic.mp4" type="video/mp4" />
+        <source src={getAssetPath('/hero-lorenic.mp4')} type="video/mp4" />
       </video>
       {/* Navy brand tint + legibility overlay (lightened so the video shows through) */}
       <div

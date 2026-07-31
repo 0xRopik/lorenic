@@ -3,6 +3,7 @@ import { BadgeCheck, FileText, FlaskConical, ShieldAlert } from 'lucide-react'
 import { Logo } from '@/components/logo'
 import { Button } from '@/components/ui/button'
 import type { ProductRecord } from '@/lib/verify-codes'
+import { getAssetPath } from '@/lib/utils'
 
 function Shell({ children }: { children: React.ReactNode }) {
   return (
@@ -74,7 +75,7 @@ export function VerifiedResult({ record }: { record: ProductRecord }) {
 
           {record.coaHref && (
             <Button
-              render={<a href={record.coaHref} target="_blank" rel="noreferrer" />}
+              render={<a href={getAssetPath(record.coaHref)} target="_blank" rel="noreferrer" />}
               className="mt-4 w-full gap-2 bg-primary text-primary-foreground hover:bg-primary/90"
             >
               <FileText className="size-4" aria-hidden="true" />

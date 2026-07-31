@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { ConsultationButton } from '@/components/consultation-button'
+import { getAssetPath } from '@/lib/utils'
 
 export function LabTesting() {
   return (
@@ -29,7 +30,7 @@ export function LabTesting() {
         <div>
           <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-lg">
             <Image
-              src="/coa.png"
+              src={getAssetPath('/coa.png')}
               alt="Contoh Certificate of Analysis untuk produk Lorenic"
               width={1024}
               height={1024}

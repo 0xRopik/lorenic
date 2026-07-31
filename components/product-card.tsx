@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { CARTRIDGE_PRICE, type Product } from '@/lib/products'
+import { getAssetPath } from '@/lib/utils'
 
 export function ProductCard({ product }: { product: Product }) {
   return (
@@ -11,7 +12,7 @@ export function ProductCard({ product }: { product: Product }) {
     >
       <div className="relative aspect-square bg-white">
         <Image
-          src={product.image || '/placeholder.svg'}
+          src={getAssetPath(product.image || '/placeholder.svg')}
           alt={`Lorenic ${product.name} vial`}
           fill
           sizes="(max-width: 640px) 50vw, 25vw"

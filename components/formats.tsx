@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { ConsultationButton } from '@/components/consultation-button'
 import { Reveal, Stagger, StaggerItem } from '@/components/reveal'
+import { getAssetPath } from '@/lib/utils'
 
 const formats = [
   {
@@ -36,7 +37,7 @@ export function Formats() {
             >
               <div className="relative aspect-[4/3] bg-secondary">
                 <Image
-                  src={format.image || '/placeholder.svg'}
+                  src={getAssetPath(format.image || '/placeholder.svg')}
                   alt={`Lorenic ${format.name}`}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"

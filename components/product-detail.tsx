@@ -13,6 +13,7 @@ import {
 } from 'lucide-react'
 import { ConsultationButton } from '@/components/consultation-button'
 import { VARIANTS, type Product, type VariantId } from '@/lib/products'
+import { getAssetPath } from '@/lib/utils'
 
 const usps = [
   { icon: FlaskConical, label: 'Teruji Laboratorium Eropa' },
@@ -40,7 +41,7 @@ export function ProductDetail({ product }: { product: Product }) {
           {/* Left: product image */}
           <div className="relative aspect-square overflow-hidden rounded-3xl border border-border bg-white">
             <Image
-              src={product.image || '/placeholder.svg'}
+              src={getAssetPath(product.image || '/placeholder.svg')}
               alt={`Lorenic ${product.name} vial`}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Reveal } from '@/components/reveal'
+import { getAssetPath } from '@/lib/utils'
 
 export function Testimonial() {
   return (
@@ -23,7 +24,7 @@ export function Testimonial() {
         <article className="mt-12 grid gap-8 rounded-3xl border border-border bg-card p-6 sm:p-10 lg:grid-cols-2 lg:items-center">
           <div className="overflow-hidden rounded-2xl">
             <Image
-              src="/athlete.png"
+              src={getAssetPath('/athlete.png')}
               alt="Atlet menggunakan peptida Lorenic"
               width={800}
               height={800}
