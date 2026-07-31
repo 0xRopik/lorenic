@@ -133,10 +133,10 @@ export function Testimonial() {
 
             <div>
               <h3 className="text-balance font-display text-2xl font-bold text-foreground">
-                &ldquo;Sudah lama stuck di berat badan ini, akhirnya baru lihat kemajuan lagi sejak konsultasi dengan Lorenic&rdquo;
+                &ldquo;Stuck bgt di BB &amp; beban segini, akhirnya dapet progress lagi pas nyobain Lorenic!&rdquo;
               </h3>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                Saya udah exercise lumayan lama, namun baru sekarang saya melihat perubahan nyata. Dalam beberapa minggu fisik saya tampak lebih padat, otot lebih terdefinisi, dan energi saya selama latihan jadi jauh lebih baik , squat biasa 110kg, sekarang naik ke 140kg. Recovery juga jauh lebih cepat.
+                Jujur udah workout lumayan lama tp kok kyk gitu-gitu aja.. Baru pas rutin beberapa minggu pake ini beneran kerasa bedanya bgt! Fisik makin kebentuk, otot keliatan lebih padat, n energi pas ngegym tuh gak ada habisnya. Squat yg tadinya mentok 110kg skrg tembus 140kg dongg 🔥 Recovery abis leg day jg jauhh lebih cepet. Fix bakal repeat order sih ini!
               </p>
               <div className="mt-6 flex items-center gap-3">
                 <span className="flex size-11 items-center justify-center rounded-full bg-primary font-display font-bold text-primary-foreground">
