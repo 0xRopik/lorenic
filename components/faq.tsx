@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: 'Apakah peptida Lorenic mematuhi peraturan yang berlaku?',
-    a: 'Klasifikasi regulasi bervariasi tergantung pada produk dan yurisdiksi. Selalu tinjau informasi produk, Certificate of Analysis (COA), dan penafian yang berlaku sebelum membeli. Jika Anda memerlukan informasi tentang status regulasi produk tertentu, silakan hubungi tim kami.',
+    a: 'Klasifikasi regulasi bervariasi tergantung pada produk dan yurisdiksi. Selalu tinjau informasi produk, Certificate of Analysis (COA), dan Disclamer yang berlaku sebelum membeli. Jika Anda memerlukan informasi tentang status regulasi produk tertentu, silakan hubungi tim kami.',
   },
   {
     q: 'Produk mana yang sebaiknya saya mulai terlebih dahulu?',
