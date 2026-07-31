@@ -12,8 +12,8 @@ const formats = [
   },
   {
     name: 'Versi PEN',
-    image: '/penpackageloreniccatalog.png',
-    bgClass: 'bg-[#f4f4f6]',
+    image: '/products/penpackagelebar.jpg',
+    bgClass: 'bg-white',
     body: 'dilengkapi dengan pen reusable premium, cartridge, dan travel set pendingin eksklusif.',
   },
 ]

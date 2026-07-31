@@ -41,7 +41,7 @@ export function ProductDetail({ product }: { product: Product }) {
   const galleryImages = [
     { src: product.image || '/placeholder.svg', label: 'Vial Riset', variantId: null },
     { src: '/cartridgepackagelorenic.png', label: 'Paket Cartridge', variantId: 'cartridge' as VariantId },
-    { src: '/penpackageloreniccatalog.png', label: 'Paket Pen', variantId: 'pen' as VariantId },
+    { src: '/products/penpackagelebar.jpg', label: 'Paket Pen', variantId: 'pen' as VariantId },
   ]
 
   // Sync format selection with active image
