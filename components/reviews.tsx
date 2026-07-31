@@ -6,37 +6,37 @@ import { Reveal, Stagger, StaggerItem } from '@/components/reveal'
 
 const ALL_REVIEWS = [
   {
-    body: 'Protokol pengujiannya sangat sistematis dan dokumentasinya sangat lengkap. Kualitas peptida yang sangat konsisten untuk setiap tahapan evaluasi.',
+    body: 'Jujur aja, baru nemu peptida riset yang hasilnya se-stabil dan se-konsisten ini. Penjelasannya gampang dipahami dan pengiriman dinginnya beneran aman banget sampai lokasi.',
     initial: 'A',
     name: 'Arya K.',
     detail: 'Peneliti & Bio-Optimizer (41th)',
   },
   {
-    body: 'Transparansi standar lab Eropa dan jaminan batch dari Lorenic membuat kami merasa sangat yakin terhadap keamanan dan mutunya.',
+    body: 'The batch consistency and lab testing standards are top notch. Delivery was fast, and the cold-chain package kept the product in perfect condition throughout transit.',
     initial: 'M',
-    name: 'Mahendra S.',
-    detail: 'Praktisi Kesehatan & Longevity (38th)',
+    name: 'Marcus V.',
+    detail: 'Performance Specialist (38th)',
   },
   {
-    body: 'Sistem pengiriman cold-chain menjaga kesegaran dan efektivitas senyawa peptida hingga tiba di tempat kami tanpa ada penurunan kualitas.',
+    body: 'Pen sama cartridge-nya praktis banget dipake sehari-hari, gak pusing urus takaran manual lagi. Timnya juga super ramah dan fast response pas gue konsultasi!',
     initial: 'R',
     name: 'Rian A.',
-    detail: 'Kinesiolog & Performance Specialist (34th)',
+    detail: 'Kinesiolog & Fitness Coach (34th)',
   },
   {
-    body: 'Format pen cartridge yang presisi memudahkan kontrol dosis harian dengan sangat mudah dan higienis.',
+    body: 'Awalnya ragu, tapi pas dicoba beberapa minggu hasilnya beneran dapet banget. Recovery abis latihan jadi jauh lebih cepet dan badan makin seger.',
     initial: 'T',
     name: 'Tari M.',
     detail: 'Konsultan Kebugaran & Wellness (39th)',
   },
   {
-    body: 'Pengiriman yang tepat waktu, kemasan terlindungi dengan baik, dan layanan responsif. Sangat direkomendasikan!',
+    body: 'Pengiriman kilat, packing pendingin rapih abis, dan kualitas barang gak usah diraguin lagi. Recommended banget buat yang cari peptida grade tinggi!',
     initial: 'B',
     name: 'Bambang H.',
     detail: 'Eksekutif & Health Enthusiast (48th)',
   },
   {
-    body: 'Varian BPC-157 dan Retatrutide dari Lorenic memberikan hasil yang terukur dengan kestabilan standar kelas atas.',
+    body: 'Varian Retatrutide sama BPC-157 nya juara sih. Efeknya berasa banget buat perbaikan jaringan dan stamina harian pas gym!',
     initial: 'K',
     name: 'Kresna L.',
     detail: 'Formulator & Biohacker (32th)',

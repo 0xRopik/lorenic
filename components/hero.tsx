@@ -57,7 +57,7 @@ export function Hero() {
           variants={item}
           className="mt-5 max-w-3xl text-balance font-display text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl"
         >
-          Peptida riset standar Eropa, <span className="text-accent">dikirim dengan presisi.</span>
+          Peptida riset standar Eropa, <span className="text-accent">Teruji klinis.</span>
         </motion.h1>
         <motion.p
           variants={item}

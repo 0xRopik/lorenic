@@ -36,9 +36,7 @@ export function Testimonial() {
               &ldquo;Kemajuan saya kembali terlihat, dan itu membuat saya terus termotivasi.&rdquo;
             </h3>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              Saya sudah berlatih sejak lama, namun baru sekarang saya melihat
-              perubahan nyata. Dalam beberapa minggu fisik saya tampak lebih padat, otot
-              lebih terdefinisi, dan energi saya selama latihan terasa jauh lebih baik.
+              Gue udah latihan lumayan lama, tapi baru sekarang beneran kerasa bedanya. Dalam beberapa minggu bentuk badan keliatan lebih padat, otot lebih terdefinisi, dan energi pas gym terasa jauh lebih mantap!
             </p>
             <div className="mt-6 flex items-center gap-3">
               <span className="flex size-11 items-center justify-center rounded-full bg-primary font-display font-bold text-primary-foreground">

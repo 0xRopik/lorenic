@@ -51,7 +51,7 @@ export const products: Product[] = [
     slug: 'retatrutide',
     name: 'Retatrutide 10mg',
     category: 'PENURUNAN LEMAK & PEMBENTUKAN OTOT',
-    image: getAssetPath('/products/retatrutide.jpeg'),
+    image: getAssetPath('/products/tirzepatide.jpeg'),
     tagline: 'Agonis tiga reseptor (GLP-1/GIP/Glukagon) untuk komposisi tubuh.',
     description:
       'Retatrutide adalah agonis tiga reseptor (GLP-1 / GIP / glukagon) yang dipelajari dalam konteks riset untuk efeknya terhadap keseimbangan energi, sinyal nafsu makan, dan komposisi tubuh. Disediakan dalam cartridge riset 10mg.',
