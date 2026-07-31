@@ -2,11 +2,10 @@
 // and the dedicated product pages.
 
 // Variant pricing is uniform across the catalog.
-// Converted from IDR at a reference rate of 1 EUR = 17,500 IDR.
-//   Cartridge: IDR 2,500,000  ->  EUR 143
-//   Pen Package: IDR 3,500,000 -> EUR 200
-export const CARTRIDGE_PRICE = '€143'
-export const PEN_PRICE = '€200'
+//   Cartridge: IDR 2,500,000
+//   Pen Package: IDR 3,500,000
+export const CARTRIDGE_PRICE = 'Rp2.500.000'
+export const PEN_PRICE = 'Rp3.500.000'
 
 export type VariantId = 'cartridge' | 'pen'
 
@@ -110,7 +109,7 @@ export const products: Product[] = [
     slug: 'bpc-157',
     name: 'BPC-157 10mg',
     category: 'PEMULIHAN & PERBAIKAN',
-    image: '/products/bpc-157.jpeg',
+    image: '/products/bpc-157.jpg',
     tagline: 'Senyawa pelindung tubuh yang dipelajari untuk perbaikan jaringan.',
     description:
       'BPC-157 adalah pentadrapeptida lambung stabil yang dipelajari secara ekstensif untuk perbaikan jaringan, pemulihan tendon dan ligamen, serta kesehatan pencernaan dalam riset preklinis.',

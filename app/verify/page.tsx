@@ -1,23 +1,23 @@
-import type { Metadata } from 'next'
-import { redirect } from 'next/navigation'
+'use client'
+
+import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { ScanLine } from 'lucide-react'
 import { Logo } from '@/components/logo'
 import { Button } from '@/components/ui/button'
 
-export const metadata: Metadata = {
-  title: 'Verifikasi Keaslian — Lorenic',
-  robots: { index: false, follow: false },
-}
-
-async function submitCode(formData: FormData) {
-  'use server'
-  const code = String(formData.get('code') ?? '').trim()
-  if (code) {
-    redirect(`/verify/${encodeURIComponent(code)}`)
-  }
-}
-
 export default function VerifyLandingPage() {
+  const [code, setCode] = useState('')
+  const router = useRouter()
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault()
+    const trimmed = code.trim()
+    if (trimmed) {
+      router.push(`/verify/${encodeURIComponent(trimmed)}`)
+    }
+  }
+
   return (
     <main className="flex min-h-dvh flex-col items-center justify-center bg-primary px-4 py-10">
       <div className="w-full max-w-md rounded-3xl border border-border bg-card p-6 shadow-xl sm:p-8">
@@ -34,7 +34,7 @@ export default function VerifyLandingPage() {
           </p>
         </div>
 
-        <form action={submitCode} className="mt-6 flex flex-col gap-3">
+        <form onSubmit={handleSubmit} className="mt-6 flex flex-col gap-3">
           <label htmlFor="code" className="sr-only">
             Kode verifikasi
           </label>
@@ -42,6 +42,8 @@ export default function VerifyLandingPage() {
             id="code"
             name="code"
             required
+            value={code}
+            onChange={(e) => setCode(e.target.value)}
             autoComplete="off"
             placeholder="Contoh: LRN-RETA-0001"
             className="h-12 w-full rounded-xl border border-input bg-background px-4 text-base text-foreground outline-none ring-ring placeholder:text-muted-foreground focus:ring-2"

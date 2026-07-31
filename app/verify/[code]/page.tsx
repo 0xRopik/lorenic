@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 }
 
+export function generateStaticParams() {
+  return [
+    { code: 'LRN-RETA-0001' },
+    { code: 'LRN-SEMA-0002' },
+    { code: 'LRN-BPC-0003' },
+    { code: 'LRN-TB-0004' },
+    { code: 'VF0601RT' },
+    { code: 'DEMO' },
+  ]
+}
+
 export default async function VerifyCodePage({
   params,
 }: {
