@@ -7,11 +7,13 @@ const formats = [
   {
     name: 'Versi CARTRIDGE',
     image: '/cartridgepackagelorenic.png',
+    bgClass: 'bg-white',
     body: 'Cocok untuk pelanggan yang sudah pernah membeli PEN PACKAGE dan ingin melanjutkan penggunaan, dapatkan harga lebih hemat dengan hanya membeli cartridge refill Lorenic dengan isi peptide.',
   },
   {
     name: 'Versi PEN',
     image: '/penpackageloreniccatalog.png',
+    bgClass: 'bg-[#f4f4f6]',
     body: 'dilengkapi dengan pen reusable premium, cartridge, dan travel set pendingin eksklusif.',
   },
 ]
@@ -35,7 +37,7 @@ export function Formats() {
               key={format.name}
               className="flex flex-col overflow-hidden rounded-3xl border border-border bg-card"
             >
-              <div className="relative aspect-[4/3] bg-white">
+              <div className={`relative aspect-[4/3] ${format.bgClass}`}>
                 <Image
                   src={getAssetPath(format.image || '/placeholder.svg')}
                   alt={`Lorenic ${format.name}`}
