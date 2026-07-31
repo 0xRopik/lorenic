@@ -102,7 +102,7 @@ export function SiteFooter() {
               <li className="flex items-center gap-2">
                 <MessageCircle className="size-4 text-accent" />
                 <a href="https://wa.me/6287769004800?text=Hallo%20Kak%2C%20saya%20mau%20tanya%20tentang%20produk%20Lorenic" target="_blank" rel="noreferrer" className="hover:text-accent">
-                  087769004800
+                  +62 87769004800
                 </a>
               </li>
               <li className="flex items-start gap-2">
