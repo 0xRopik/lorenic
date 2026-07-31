@@ -1,0 +1,69 @@
+import Image from 'next/image'
+import { ConsultationButton } from '@/components/consultation-button'
+import { Reveal, Stagger, StaggerItem } from '@/components/reveal'
+
+const formats = [
+  {
+    name: 'Versi Vial',
+    image: '/products/vial-version.jpeg',
+    body: 'Format vial menawarkan fleksibilitas yang lebih besar dan merupakan pilihan populer bagi mereka yang mengutamakan efisiensi serta kontrol dosis yang lebih rinci.',
+  },
+  {
+    name: 'Versi Pen',
+    image: '/lorenic-package.jpeg',
+    body: 'Pra-terukur dan siap digunakan tanpa langkah tambahan. Ideal bagi Anda yang mengutamakan kepraktisan, konsistensi, dan kemudahan penggunaan sehari-hari.',
+  },
+]
+
+export function Formats() {
+  return (
+    <section className="bg-secondary py-16 md:py-24">
+      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
+        <Reveal className="mx-auto max-w-2xl text-center">
+          <h2 className="heading-gradient text-balance font-display text-3xl font-bold tracking-tight sm:text-4xl">
+            Satu standar kualitas. Dua cara penggunaan.
+          </h2>
+          <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
+            Kualitas yang sama, cara penggunaan yang berbeda. Pilih format yang paling sesuai dengan rutinitas dan kebutuhan Anda.
+          </p>
+        </Reveal>
+
+        <Stagger className="mt-12 grid gap-6 md:grid-cols-2">
+          {formats.map((format) => (
+            <StaggerItem
+              key={format.name}
+              className="flex flex-col overflow-hidden rounded-3xl border border-border bg-card"
+            >
+              <div className="relative aspect-[4/3] bg-secondary">
+                <Image
+                  src={format.image || '/placeholder.svg'}
+                  alt={`Lorenic ${format.name}`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6 sm:p-8">
+                <h3 className="font-display text-2xl font-bold text-foreground">
+                  {format.name}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  {format.body}
+                </p>
+              </div>
+            </StaggerItem>
+          ))}
+        </Stagger>
+
+        <div className="mt-10 text-center">
+          <ConsultationButton
+            size="lg"
+            className="bg-accent text-accent-foreground hover:bg-accent/90"
+          >
+            Mulai Konsultasi Gratis
+          </ConsultationButton>
+        </div>
+      </div>
+    </section>
+  )
+}

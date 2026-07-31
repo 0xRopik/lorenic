@@ -1,0 +1,120 @@
+import { Mail, MessageCircle, MapPin } from 'lucide-react'
+import { Logo } from '@/components/logo'
+import { Button } from '@/components/ui/button'
+
+export function SiteFooter() {
+  return (
+    <footer id="kontak" className="bg-primary text-primary-foreground">
+      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
+        <div className="grid gap-8 border-b border-primary-foreground/15 py-14 lg:grid-cols-2 lg:items-center">
+          <div>
+            <h2 className="text-balance font-display text-3xl font-bold tracking-tight sm:text-4xl">
+              Siap memesan? Mulai dengan konsultasi gratis.
+            </h2>
+            <p className="mt-3 max-w-md text-pretty leading-relaxed text-primary-foreground/80">
+              Tim kami siap membantu Anda memilih produk dan paket yang sesuai dengan
+              kebutuhan riset Anda.
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
+            <Button
+              render={<a href="https://wa.me/6280000000000" />}
+              size="lg"
+              className="gap-2 bg-accent text-accent-foreground hover:bg-accent/90"
+            >
+              <MessageCircle className="size-4" />
+              Chat dengan Kami
+            </Button>
+            <Button
+              render={<a href="mailto:hello@lorenic.com" />}
+              size="lg"
+              variant="outline"
+              className="gap-2 border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
+            >
+              <Mail className="size-4" />
+              Kirim Email
+            </Button>
+          </div>
+        </div>
+
+        <div className="grid gap-8 py-12 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="sm:col-span-2 lg:col-span-1">
+            <Logo variant="light" withTagline />
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-primary-foreground/70">
+              Peptida riset kelas laboratorium, diriset dan teruji untuk hasil yang andal.
+            </p>
+          </div>
+
+          <nav aria-label="Produk">
+            <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-primary-foreground/60">
+              Produk
+            </h3>
+            <ul className="mt-4 flex flex-col gap-2 text-sm text-primary-foreground/80">
+              <li>
+                <a href="#katalog" className="hover:text-accent">
+                  Katalog Peptida
+                </a>
+              </li>
+              <li>
+                <a href="#format" className="hover:text-accent">
+                  Versi Vial
+                </a>
+              </li>
+              <li>
+                <a href="#format" className="hover:text-accent">
+                  Versi Pen
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav aria-label="Perusahaan">
+            <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-primary-foreground/60">
+              Perusahaan
+            </h3>
+            <ul className="mt-4 flex flex-col gap-2 text-sm text-primary-foreground/80">
+              <li>
+                <a href="#kualitas" className="hover:text-accent">
+                  Kualitas
+                </a>
+              </li>
+              <li>
+                <a href="#pengiriman" className="hover:text-accent">
+                  Pengiriman
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="hover:text-accent">
+                  FAQ
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div>
+            <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-primary-foreground/60">
+              Kontak
+            </h3>
+            <ul className="mt-4 flex flex-col gap-3 text-sm text-primary-foreground/80">
+              <li className="flex items-center gap-2">
+                <Mail className="size-4 text-accent" /> hello@lorenic.com
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="mt-0.5 size-4 text-accent" /> Pengiriman ke seluruh Eropa &amp; dunia
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-2 border-t border-primary-foreground/15 py-6 text-xs text-primary-foreground/60 sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            &copy; {new Date().getFullYear()} Lorenic. Hak cipta dilindungi.
+          </p>
+          <p className="max-w-lg text-pretty sm:text-right">
+            Hanya untuk penelitian laboratorium. Bukan untuk konsumsi manusia atau hewan.
+          </p>
+        </div>
+      </div>
+    </footer>
+  )
+}
