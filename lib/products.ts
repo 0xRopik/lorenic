@@ -3,18 +3,11 @@
 
 import { getAssetPath } from '@/lib/utils'
 
-// Variant pricing is uniform across the catalog.
-//   Cartridge: IDR 2,500,000
-//   Pen Package: IDR 3,500,000
-export const CARTRIDGE_PRICE = 'Rp2.500.000'
-export const PEN_PRICE = 'Rp3.500.000'
-
 export type VariantId = 'cartridge' | 'pen'
 
 export interface ProductVariant {
   id: VariantId
   label: string
-  price: string
   note: string
 }
 
@@ -22,13 +15,11 @@ export const VARIANTS: ProductVariant[] = [
   {
     id: 'cartridge',
     label: 'Cartridge',
-    price: CARTRIDGE_PRICE,
     note: 'Cartridge isi ulang untuk perangkat Lorenic Pen.',
   },
   {
     id: 'pen',
     label: 'Paket Pen',
-    price: PEN_PRICE,
     note: 'Pen lengkap pra-terisi, siap digunakan langsung.',
   },
 ]
@@ -44,6 +35,10 @@ export interface Product {
   description: string
   /** Dosing reference printed on the vial label. */
   dosage: string
+  cartridgePrice: string
+  cartridgeOriginalPrice?: string
+  penPrice: string
+  penOriginalPrice?: string
 }
 
 export const products: Product[] = [
@@ -56,6 +51,10 @@ export const products: Product[] = [
     description:
       'Retatrutide adalah agonis tiga reseptor (GLP-1 / GIP / glukagon) yang dipelajari dalam konteks riset untuk efeknya terhadap keseimbangan energi, sinyal nafsu makan, dan komposisi tubuh. Disediakan dalam cartridge riset 10mg.',
     dosage: '200 klik · 20 klik = 1mg',
+    cartridgePrice: 'Rp3.200.000',
+    cartridgeOriginalPrice: 'Rp4.000.000',
+    penPrice: 'Rp4.200.000',
+    penOriginalPrice: 'Rp5.200.000',
   },
   {
     slug: 'tirzepatide',
@@ -66,6 +65,10 @@ export const products: Product[] = [
     description:
       'Tirzepatide menggabungkan stimulasi reseptor GIP dan GLP-1 yang dipelajari secara luas untuk penurunan berat badan, sensitivitas insulin, dan manajemen metabolik.',
     dosage: '200 klik · 20 klik = 1mg',
+    cartridgePrice: 'Rp3.000.000',
+    cartridgeOriginalPrice: 'Rp4.000.000',
+    penPrice: 'Rp4.000.000',
+    penOriginalPrice: 'Rp5.000.000',
   },
   {
     slug: 'semaglutide',
@@ -76,6 +79,10 @@ export const products: Product[] = [
     description:
       'Semaglutide adalah peptida agonis GLP-1 yang diriset untuk manajemen berat badan, regulasi glukosa darah, dan penekanan sinyal lapar.',
     dosage: '200 klik · 20 klik = 0.5mg',
+    cartridgePrice: 'Rp1.800.000',
+    cartridgeOriginalPrice: 'Rp2.350.000',
+    penPrice: 'Rp2.800.000',
+    penOriginalPrice: 'Rp3.350.000',
   },
   {
     slug: 'cjc-1295-ipamorelin',
@@ -86,6 +93,10 @@ export const products: Product[] = [
     description:
       'Kombinasi sinergis dari CJC-1295 (No DAC), analog GHRH, dan Ipamorelin, sekretagog hormon pertumbuhan selektif. Dipelajari bersama untuk pelepasan hormon pertumbuhan impulsif, pemulihan, dan penunjang jaringan otot.',
     dosage: '200 klik · 20 klik = 1mg',
+    cartridgePrice: 'Rp1.300.000',
+    cartridgeOriginalPrice: 'Rp1.750.000',
+    penPrice: 'Rp2.300.000',
+    penOriginalPrice: 'Rp2.750.000',
   },
   {
     slug: 'hgh',
@@ -96,6 +107,10 @@ export const products: Product[] = [
     description:
       'HGH (Human Growth Hormone / Somatropin) dipelajari untuk stimulasi pertambahan massa otot, pemulihan jaringan ikat, peningkatan kepadatan tulang, dan anti-penuaan.',
     dosage: '200 klik · 20 klik = 1IU',
+    cartridgePrice: 'Rp3.000.000',
+    cartridgeOriginalPrice: 'Rp3.575.000',
+    penPrice: 'Rp4.000.000',
+    penOriginalPrice: 'Rp4.575.000',
   },
   {
     slug: 'kpv',
@@ -106,6 +121,10 @@ export const products: Product[] = [
     description:
       'KPV (Lys-Pro-Val) adalah tripeptida yang diteliti untuk kemampuannya meredakan peradangan usus, mempercepat penyembuhan luka, serta meredakan respon imun berlebih.',
     dosage: '200 klik · 20 klik = 1mg',
+    cartridgePrice: 'Rp1.300.000',
+    cartridgeOriginalPrice: 'Rp1.680.000',
+    penPrice: 'Rp2.300.000',
+    penOriginalPrice: 'Rp2.680.000',
   },
   {
     slug: 'semax',
@@ -116,6 +135,10 @@ export const products: Product[] = [
     description:
       'Semax adalah peptida sintetis turunan ACTH yang dipelajari untuk peningkatan fungsi kognitif, kejelasan mental, memori, serta perlindungan sel saraf dari stres oksidatif.',
     dosage: '200 klik · 20 klik = 1mg',
+    cartridgePrice: 'Rp1.200.000',
+    cartridgeOriginalPrice: 'Rp1.850.000',
+    penPrice: 'Rp2.200.000',
+    penOriginalPrice: 'Rp2.850.000',
   },
   {
     slug: 'selank',
@@ -126,6 +149,10 @@ export const products: Product[] = [
     description:
       'Selank adalah peptida turunan Tuftsin yang diriset untuk modulasi kecemasan, stabilisasi mood, serta dukungan kesehatan mental tanpa efek sedatif.',
     dosage: '200 klik · 20 klik = 1mg',
+    cartridgePrice: 'Rp1.200.000',
+    cartridgeOriginalPrice: 'Rp1.850.000',
+    penPrice: 'Rp2.200.000',
+    penOriginalPrice: 'Rp2.850.000',
   },
   {
     slug: 'glutathione',
@@ -136,6 +163,10 @@ export const products: Product[] = [
     description:
       'Glutathione adalah antioksidan paling utama dalam tubuh seluler yang diriset untuk netralisasi radikal bebas, kesehatan hati, serta pencerahan & regenerasi jaringan.',
     dosage: '200 klik · 20 klik = 150mg',
+    cartridgePrice: 'Rp800.000',
+    cartridgeOriginalPrice: 'Rp1.050.000',
+    penPrice: 'Rp1.300.000',
+    penOriginalPrice: 'Rp2.050.000',
   },
   {
     slug: 'klow80',
@@ -146,6 +177,10 @@ export const products: Product[] = [
     description:
       'KLOW80 adalah formulasi pemulihan multi-peptida yang menggabungkan senyawa regeneratif dan reparatif. Diriset untuk perbaikan jaringan, kualitas kulit, dan penunjang pemulihan menyeluruh dalam satu format praktis.',
     dosage: '200 klik',
+    cartridgePrice: 'Rp3.900.000',
+    cartridgeOriginalPrice: 'Rp5.000.000',
+    penPrice: 'Rp4.900.000',
+    penOriginalPrice: 'Rp6.000.000',
   },
   {
     slug: 'mots-c',
@@ -156,6 +191,10 @@ export const products: Product[] = [
     description:
       'MOTS-C adalah peptida turunan mitokondria yang dipelajari untuk perannya dalam regulasi metabolik, sensitivitas insulin, dan energi seluler. Senyawa yang semakin diminati dalam riset metabolik dan umur panjang.',
     dosage: '200 klik · 100 klik = 5mg',
+    cartridgePrice: 'Rp1.250.000',
+    cartridgeOriginalPrice: 'Rp1.475.000',
+    penPrice: 'Rp3.250.000',
+    penOriginalPrice: 'Rp4.250.000',
   },
   {
     slug: 'nad-plus',
@@ -166,6 +205,10 @@ export const products: Product[] = [
     description:
       'NAD+ (nicotinamide adenine dinucleotide) adalah koenzim utama untuk produksi energi seluler dan perbaikan DNA. Dipelajari secara luas dalam riset regenerasi dan ketahanan hidup sel pada konsentrasi tinggi 500mg.',
     dosage: '200 klik · 20 klik = 50mg',
+    cartridgePrice: 'Rp2.800.000',
+    cartridgeOriginalPrice: 'Rp3.200.000',
+    penPrice: 'Rp3.800.000',
+    penOriginalPrice: 'Rp4.200.000',
   },
   {
     slug: 'tesamorelin',
@@ -176,6 +219,10 @@ export const products: Product[] = [
     description:
       'Tesamorelin adalah analog GHRH terstabilkan yang dipelajari untuk efeknya terhadap pengurangan lemak viseral dan stimulasi hormon pertumbuhan. Disediakan dalam cartridge riset 10mg.',
     dosage: '200 klik · 40 klik = 2mg',
+    cartridgePrice: 'Rp2.200.000',
+    cartridgeOriginalPrice: 'Rp3.000.000',
+    penPrice: 'Rp3.200.000',
+    penOriginalPrice: 'Rp4.000.000',
   },
   {
     slug: 'bpc-157',
@@ -186,6 +233,10 @@ export const products: Product[] = [
     description:
       'BPC-157 adalah pentadrapeptida lambung stabil yang dipelajari secara ekstensif untuk perbaikan jaringan, pemulihan tendon dan ligamen, serta kesehatan pencernaan dalam riset preklinis.',
     dosage: '200 klik · 10 klik = 0.5mg',
+    cartridgePrice: 'Rp1.500.000',
+    cartridgeOriginalPrice: 'Rp1.855.000',
+    penPrice: 'Rp2.500.000',
+    penOriginalPrice: 'Rp2.855.000',
   },
   {
     slug: 'ghk-cu',
@@ -196,6 +247,10 @@ export const products: Product[] = [
     description:
       'GHK-Cu adalah tripeptida tembaga alami yang dipelajari untuk regenerasi kulit, sintesis kolagen, dan penyembuhan luka. Disediakan dalam konsentrasi tinggi 100mg untuk penggunaan riset.',
     dosage: '200 klik · 40 klik = 2mg',
+    cartridgePrice: 'Rp2.000.000',
+    cartridgeOriginalPrice: 'Rp2.400.000',
+    penPrice: 'Rp3.000.000',
+    penOriginalPrice: 'Rp3.400.000',
   },
 ]
 

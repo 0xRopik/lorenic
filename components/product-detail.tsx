@@ -211,10 +211,15 @@ export function ProductDetail({ product }: { product: Product }) {
               {product.description}
             </p>
 
-            <div className="mt-5 flex items-baseline gap-2">
+            <div className="mt-5 flex flex-wrap items-baseline gap-2">
               <span className="font-display text-3xl font-bold text-primary">
-                {activeVariant.price}
+                {variant === 'cartridge' ? product.cartridgePrice : product.penPrice}
               </span>
+              {(variant === 'cartridge' ? product.cartridgeOriginalPrice : product.penOriginalPrice) && (
+                <span className="text-base font-medium text-muted-foreground line-through">
+                  {variant === 'cartridge' ? product.cartridgeOriginalPrice : product.penOriginalPrice}
+                </span>
+              )}
               <span className="text-sm text-muted-foreground">
                 / {activeVariant.label.toLowerCase()}
               </span>
@@ -231,6 +236,8 @@ export function ProductDetail({ product }: { product: Product }) {
               <div className="mt-3 grid grid-cols-2 gap-3">
                 {VARIANTS.map((v) => {
                   const selected = v.id === variant
+                  const priceVal = v.id === 'cartridge' ? product.cartridgePrice : product.penPrice
+                  const origPriceVal = v.id === 'cartridge' ? product.cartridgeOriginalPrice : product.penOriginalPrice
                   return (
                     <button
                       key={v.id}
@@ -246,9 +253,16 @@ export function ProductDetail({ product }: { product: Product }) {
                       <span className="font-display text-sm font-semibold text-foreground">
                         {v.label}
                       </span>
-                      <span className="mt-1 font-display text-lg font-bold text-primary">
-                        {v.price}
-                      </span>
+                      <div className="mt-1 flex flex-wrap items-baseline gap-1.5">
+                        <span className="font-display text-lg font-bold text-primary">
+                          {priceVal}
+                        </span>
+                        {origPriceVal && (
+                          <span className="text-xs text-muted-foreground line-through">
+                            {origPriceVal}
+                          </span>
+                        )}
+                      </div>
                       <span className="mt-1 text-xs leading-snug text-muted-foreground">
                         {v.note}
                       </span>

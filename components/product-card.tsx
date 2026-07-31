@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
-import { CARTRIDGE_PRICE, type Product } from '@/lib/products'
+import { type Product } from '@/lib/products'
 import { getAssetPath } from '@/lib/utils'
 
 export function ProductCard({ product }: { product: Product }) {
@@ -27,10 +27,15 @@ export function ProductCard({ product }: { product: Product }) {
         <h3 className="mt-1 font-display text-base font-semibold text-foreground line-clamp-1">
           {product.name}
         </h3>
-        <div className="mt-3 flex items-baseline gap-1.5">
+        <div className="mt-3 flex flex-wrap items-baseline gap-1.5">
           <span className="font-display text-lg font-bold text-primary">
-            {CARTRIDGE_PRICE}
+            {product.cartridgePrice}
           </span>
+          {product.cartridgeOriginalPrice && (
+            <span className="text-xs text-muted-foreground line-through">
+              {product.cartridgeOriginalPrice}
+            </span>
+          )}
           <span className="text-xs text-muted-foreground">/ cartridge</span>
         </div>
         <span className="mt-4 inline-flex items-center justify-center gap-2 rounded-md bg-secondary px-4 py-2 text-sm font-medium text-secondary-foreground transition-colors group-hover:bg-secondary/70">

@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 
 export function SiteFooter() {
   return (
-    <footer id="kontak" className="bg-gradient-to-br from-[#1e40af] via-[#1d4ed8] to-[#1e3a8a] text-primary-foreground">
+    <footer id="kontak" className="bg-[#0d2359] text-primary-foreground">
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
         <div className="grid gap-8 border-b border-primary-foreground/15 py-14 lg:grid-cols-2 lg:items-center">
           <div>
