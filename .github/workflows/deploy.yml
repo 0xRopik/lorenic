@@ -33,6 +33,7 @@ jobs:
       - name: Build with Next.js
         env:
           BASE_PATH: '/lorenic'
+          NEXT_PUBLIC_BASE_PATH: '/lorenic'
         run: npm run build
 
       - name: Upload artifact
