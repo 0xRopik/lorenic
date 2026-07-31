@@ -76,12 +76,12 @@ export function Testimonial() {
                 setIsDragging(true)
                 if (e.touches.length > 0) handleMove(e.touches[0].clientX)
               }}
-              className="relative aspect-[4/3] w-full select-none overflow-hidden rounded-2xl cursor-ew-resize border border-border bg-black shadow-md"
+              className="relative aspect-[4/5] w-full max-w-md mx-auto select-none overflow-hidden rounded-2xl cursor-ew-resize border border-border bg-black shadow-md"
             >
               {/* After Image (Background layer) */}
               <div className="absolute inset-0">
                 <Image
-                  src={getAssetPath('/products/AFTER.jpg')}
+                  src={getAssetPath('/products/AFTER3.jpg')}
                   alt="Transformasi Setelah (AFTER)"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -107,7 +107,7 @@ export function Testimonial() {
                   }}
                 >
                   <Image
-                    src={getAssetPath('/products/BEFORE.jpg')}
+                    src={getAssetPath('/products/BEFORE3.jpg')}
                     alt="Transformasi Sebelum (BEFORE)"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
@@ -133,19 +133,19 @@ export function Testimonial() {
 
             <div>
               <h3 className="text-balance font-display text-2xl font-bold text-foreground">
-                &ldquo;Kemajuan saya kembali terlihat, dan itu membuat saya terus termotivasi.&rdquo;
+                &ldquo;Sudah lama stuck di berat badan ini, akhirnya baru lihat kemajuan lagi sejak konsultasi dengan Lorenic&rdquo;
               </h3>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                Gue udah latihan lumayan lama, tapi baru sekarang beneran kerasa bedanya. Dalam beberapa minggu bentuk badan keliatan lebih padat, otot lebih terdefinisi, dan energi pas gym terasa jauh lebih mantap!
+                Saya udah exercise lumayan lama, namun baru sekarang saya melihat perubahan nyata. Dalam beberapa minggu fisik saya tampak lebih padat, otot lebih terdefinisi, dan energi saya selama latihan jadi jauh lebih baik , squat biasa 110kg, sekarang naik ke 140kg. Recovery juga jauh lebih cepat.
               </p>
               <div className="mt-6 flex items-center gap-3">
                 <span className="flex size-11 items-center justify-center rounded-full bg-primary font-display font-bold text-primary-foreground">
-                  RA
+                  K
                 </span>
                 <div>
-                  <p className="font-semibold text-foreground">Reza A.</p>
+                  <p className="font-semibold text-foreground">Ken</p>
                   <p className="text-sm text-muted-foreground">
-                    Praktisi binaraga &amp; kesehatan
+                    Fitness Enthusiast
                   </p>
                 </div>
               </div>

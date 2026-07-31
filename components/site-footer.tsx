@@ -41,7 +41,7 @@ export function SiteFooter() {
           <div className="sm:col-span-2 lg:col-span-1">
             <Logo variant="light" withTagline />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-primary-foreground/70">
-              Peptida riset kelas laboratorium, diriset dan teruji untuk hasil yang andal.
+              Peptida riset grade Laboratorium, diriset secara klinis, dan teruji untuk potensi maksimal.
             </p>
           </div>
 
@@ -117,7 +117,7 @@ export function SiteFooter() {
             &copy; {new Date().getFullYear()} Lorenic. Hak cipta dilindungi.
           </p>
           <p className="max-w-lg text-pretty sm:text-right">
-            Bukan untuk konsumsi manusia atau hewan.
+            Hanya untuk penggunaan laboratorium.
           </p>
         </div>
       </div>

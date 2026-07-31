@@ -159,6 +159,7 @@ export const products: Product[] = [
     cartridgeOriginalPrice: 'Rp1.850.000',
     penPrice: 'Rp2.200.000',
     penOriginalPrice: 'Rp2.850.000',
+    hidden: true,
   },
   {
     slug: 'glutathione',
